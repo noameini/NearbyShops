@@ -1,5 +1,5 @@
 # Nearby Shops
-Dispplay list of nearby shops using google map api. 
+Display list of nearby shops using google map api. 
 
 **Functional:**
 

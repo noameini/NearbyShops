@@ -1,0 +1,15 @@
+﻿
+<p id="uname" class="nav navbar-text navbar-right">
+    @if ((string)Session["username"] != null)
+    {
+        string str = (string)Session["username"];
+        @(str)
+    }
+</p>
+<ul class="nav navbar-nav navbar-right">
+    @if ((string)Session["username"] != null)
+    {
+        <li>@Html.ActionLink("My preferred Shops", "MyShops", "Home")</li>
+        <li><a href="#" id="loginLink" onclick="Logout()">Log Out</a></li>
+    }
+</ul>

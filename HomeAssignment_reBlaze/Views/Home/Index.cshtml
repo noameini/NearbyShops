@@ -1,0 +1,27 @@
+﻿@using HomeAssignment_reBlaze.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <p><h1> Welcome to - My nearby shops! </h1></p>
+</div>
+@if ((string)Session["username"] == null)
+{
+    <div id="ShowRegister" style="float:left; display:none;">
+        @Html.Partial("PartialRegister")
+    </div>
+
+    <div id="ShowLogin" style="float:left; ">
+        @Html.Partial("PartialLogin")
+    </div>
+}
+
+<div id="StoreList"></div>
+<div id="map"></div>
+
+<script src="~/Scripts/sweetalert.min.js"></script>
+<script src="~/Scripts/MyJS.js"></script>
+<script src="~/Scripts/SearchNearbyPlacesJS.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEWa84jiTE5jKJzxCuUG57wDDC1Voe_OU&libraries=places&rankby=distance&callback=initialize" async defer></script>

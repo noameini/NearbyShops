@@ -1,5 +1,5 @@
-# NearbyShops
-Dispplay list of nearby shops using google map api. 
+# Nearby Shops
+Display list of nearby shops using google map api. 
 
 **Functional:**
 
@@ -10,7 +10,7 @@ Dispplay list of nearby shops using google map api.
 
 -List all the shops sorted by the distance (in a radius of 2KM)
 
--The web application will be responsive to all devices (Mobile, Desktop...).
+-The web application is responsive to all devices (Mobile, Desktop...).
 
 -A user can like a shop so it will be added to "my preferred shops" page
 
